@@ -5,7 +5,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'concourse-pipeline-generator'
+  spec.name          = 'concourse-helpers'
   spec.version       = ConcoursePipelineGenerator::VERSION
   spec.authors       = ["Alexander Lomov"]
   spec.email         = ["alexander.lomov@altoros.com"]
@@ -21,10 +21,6 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = '>= 2.0.0'
 
-  spec.add_runtime_dependency 'bosh_cli',  ">= #{bosh_version}"
-  spec.add_runtime_dependency 'bosh_common',  ">= #{bosh_version}"
-  spec.add_runtime_dependency 'bosh-versions',  '~> 0.1.1'
-  spec.add_runtime_dependency 'membrane', '~> 1.1.0'
   spec.add_runtime_dependency 'erubis', '~> 2.7.0'
   spec.add_runtime_dependency 'git', '~> 1.2.6'
 

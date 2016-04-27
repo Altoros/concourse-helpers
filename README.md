@@ -1,4 +1,4 @@
-# concourse-pipeline-generator
+# concourse-helpers
 
 A simple gem to generate pipelines for ConcourseCI.
 
@@ -7,17 +7,17 @@ A simple gem to generate pipelines for ConcourseCI.
 The generator is implemented as a gem, which is supported by Ruby 2.x
 
 ```bash
-gem install concourse-pipeline-generator
+gem install concourse-helpers
 ```
 
 ### How to use 
 
 ```
-concourse generate pipeline rspec
+concourse-helpers generate pipeline rspec
 ```
 
-You can also use an alias `cgp`:
+You can also use an alias `ch`:
 
 ```
-cgp rspec
+ch rspec
 ```
